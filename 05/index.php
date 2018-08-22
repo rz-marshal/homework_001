@@ -29,11 +29,7 @@ $cars = [
 ];
 
 foreach ($cars as $key => $property) {
-
-    echo PHP_EOL.PHP_EOL;
-    echo "CAR $key".PHP_EOL;
-
-    foreach ($property as $value) {
-        echo $value." ";
-    }
+    echo PHP_EOL . PHP_EOL;
+    echo "CAR $key" . PHP_EOL;
+    echo implode(" ", $property);
 }

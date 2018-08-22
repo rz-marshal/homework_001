@@ -3,12 +3,12 @@
 // 3.
 $age = 0;
 
-if ((18 <= $age) && ($age <= 65)) {
-    print ("Вам ещё работать и работать").PHP_EOL;
+if ($age >= 18 && $age <= 65) {
+    echo "Вам ещё работать и работать" . PHP_EOL;
 } elseif ($age > 65) {
-    print ("Вам пора на пенсию").PHP_EOL;
-} elseif ((1 <= $age) && ($age <= 17)) {
-    print ("Вам ещё рано работать").PHP_EOL;
+    echo "Вам пора на пенсию" . PHP_EOL;
+} elseif ($age > 0 && $age < 18) {
+    echo "Вам ещё рано работать" . PHP_EOL;
 } else {
-    echo "Неизвестный возраст".PHP_EOL;
+    echo "Неизвестный возраст" . PHP_EOL;
 }
